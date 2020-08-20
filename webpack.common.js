@@ -8,12 +8,14 @@ module.exports = {
     filename: "bundle.js",
   },
   module: {
-    rules: [
-      {
-        test: /\.s[ac]ss$/i,
-        use: ["style-loader", "css-loader", "sass-loader"],
-      },
-    ],
+    rules:
+      // Loader untuk file Sass
+      [
+        {
+          test: /\.s[ac]ss$/i,
+          use: ["style-loader", "css-loader", "sass-loader"],
+        },
+      ],
   },
   plugins: [
     new HtmlWebpackPlugin({
