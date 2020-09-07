@@ -1,4 +1,5 @@
 import "./css/style.scss";
+import "regenerator-runtime";
 
 const dataFetch = async (url) => {
   const data = await fetch(url);
